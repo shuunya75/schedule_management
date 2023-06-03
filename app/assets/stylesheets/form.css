@@ -1,0 +1,86 @@
+.form_wrapper {
+  max-width: 650px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.form_title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.form_container {
+  background-color: white;
+  padding: 20px;
+}
+
+.form_flex {
+  display: flex;
+  gap: 20px;
+}
+
+.form_space {
+  width: 100%;
+}
+
+.label {
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.form_date_input {
+  padding: 2px 5px;
+  margin-bottom: 12px;
+  border: 1px solid #ced4da;
+}
+
+.input_area {
+  width: 100%;
+  height: 40px;
+  padding: 5px;
+}
+
+.long_input_area {
+  width: 100%;
+  height: 100px;
+  padding: 5px;
+}
+
+.check_box_area {
+  margin-bottom: 15px;
+}
+
+.check_box {
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.check_box_label {
+  font-weight: normal;
+  font-size: 13px;
+  vertical-align: middle;
+}
+
+.form_buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: flex-end;
+}
+
+.form_btn {
+  padding: 12px 20px;
+  border: solid;
+  border-radius: 5px;
+}
+
+.cancel_btn {
+  border-color: #e0e0e0;
+}
+
+.save_btn {
+  background-color: #2962ff;
+  color: #fff;
+}

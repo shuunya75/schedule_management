@@ -1,0 +1,49 @@
+<div class="container">
+  <div class="show_container">
+    <p class="link_icon">←</p><%= link_to "一覧に戻る", root_path, {class: "show_link"} %>
+    <div class="show_title">
+      <h2><%= @schedule.title %></h2>
+      <div class="update_schedule">
+        <%= link_to "編集", edit_schedule_path %>
+      </div>
+    </div>
+    <div class="wrapper">
+      <table class="show_table">
+        <tbody>
+          <tr>
+            <th>
+              開始日
+            </th>
+            <td>
+              <%= I18n.l(@schedule.start_date, format: :default) %>
+            </td>
+          </tr>
+          <tr>
+            <th>
+              終了日
+            </th>
+            <td>
+              <%= I18n.l(@schedule.end_date, format: :default) %>
+            </td>
+          </tr>
+          <tr>
+            <th>
+              終日
+            </th>
+            <td>
+              <strong>○</strong>
+            </td>
+          </tr>
+          <tr>
+            <th>
+              スケジュールメモ
+            </th>
+            <td>
+              <%= @schedule.content %>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

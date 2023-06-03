@@ -1,0 +1,64 @@
+.show_container {
+  max-width: 650px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.link_icon {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 25px;
+  color: blue;
+}
+
+.show_link {
+  vertical-align: middle;
+  padding-left: 5px;
+  color: blue;
+}
+
+.show_title {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 18px;
+}
+
+.show_title h2 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.update_schedule {
+  border:1px solid blue;
+  color: blue;
+  padding: 15px 20px;
+  border-radius: 5px;
+}
+
+.wrapper {
+  padding: 20px;
+  background-color: white;
+}
+
+.show_table {
+  width: 100%;
+  font-size: 14px;
+  word-break: keep-all;
+}
+
+.show_table tr {
+  border: 1px solid rgb(222, 222, 235);
+}
+
+.show_table th {
+  padding: 10px 15px;
+  vertical-align: middle;
+  background-color: rgb(239, 243, 246);
+}
+
+.show_table td {
+  padding: 20px 15px;
+  width: 100%;
+}

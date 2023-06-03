@@ -1,0 +1,52 @@
+<div class="container">
+  <div class="form_wrapper">
+    <h2 class="form_title">予定の新規追加</h2>
+    <% @schedule.errors.full_messages.each do |message| %>
+      <li><%= message %></li>
+    <% end %>
+    <div class="form_container">
+      <%= form_with(model: @schedule, local: true) do |f| %>
+        <div class="label">
+          <%= f.label :title, 'タイトル' %>
+        </div>
+        <div class="form_date_input">
+          <%= f.text_field :title, class: "input_area" %>
+        </div>
+        <div class="form_flex">
+          <div class="form_space">
+            <div class="label">
+              <%= f.label :start_date, '開始日' %>
+            </div>
+            <div class="form_date_input">
+              <%= f.date_field :start_date, class: "input_area" %>
+            </div>
+          </div>
+          <div class="form_space">
+            <div class="label">
+              <%= f.label :end_date, '終了日' %>
+            </div>
+            <div class="form_date_input">
+              <%= f.date_field :end_date, class: "input_area" %>
+            </div>
+          </div>
+        </div>
+        <div class="check_box_area">
+          <div class="label">
+            <%= f.check_box :is_all_day, class: "check_box" %>
+            <%= f.label :is_all_day, '終日の場合はチェックを入れます', class:"check_box_label" %>
+          </div>
+        </div>
+        <div class="label">
+          <%= f.label :content, 'スケジュールメモ' %>
+        </div>
+        <div class="form_date_input">
+          <%= f.text_area :content, class: "long_input_area" %>
+        </div>
+        <div class="form_buttons">
+          <%= link_to "キャンセル", root_path, class: "form_btn cancel_btn" %>
+          <%= f.submit '保存', class: "form_btn save_btn" %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
